@@ -48,7 +48,7 @@ public class Controller implements Initializable{
 		LocalDate localDate = date.getValue(); 
 		String content = textfield.getText();
 		
-		
+				
 		System.out.println("title :"+ title);
 		System.out.println("pwd :"+ pwd);
 		System.out.println("str_public :"+ str_public);

@@ -35,7 +35,7 @@ public class Controller implements Initializable{
 		
 		combo1.setItems(list); // ComboBox를 수행하기 위해선 ObservableList 클래스 객체 필요.
 							   // 또는 FXML에서 수정하는 방법도 있음
-		
+	
 		
 		
 	}

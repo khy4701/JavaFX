@@ -63,7 +63,13 @@ public class v_control implements Initializable {
 		
 		// 첫번째 열(세로)에 들어갈 Offset
 		TableColumn smartphone = TblView.getColumns().get(0);
-		smartphone.setCellValueFactory(new PropertyValueFactory("smartphone"));
+		smartphone.setCellValueFactory(new PropertyValueFactory("smartphone")); 
+		
+		/*
+		 * PropertyValueFactory 함수의 생성자는   TableView<Phone> 에서 생성한 Phone 클래스의 메소드의 Callback 함수 형태
+		 *  smartphone은 Phone클래스의 getSmartphone 메소드에서 get을 제외한 글자이다.
+		 */
+		
 		smartphone.setStyle("-fx-alignment: CENTER");
 				
 		// 두번째 열(세로)에 들어갈 Offset

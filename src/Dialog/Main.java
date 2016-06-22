@@ -16,6 +16,8 @@ public class Main extends Application {
 			Parent root = loader.load();
 			
 			controller control = loader.getController();
+			
+			// 컨트롤러에서  Stage을 넘겨주어 컨트롤러에서 새로운 Dialog 생성 가능.
 			control.setPrimaryStage(primaryStage);
 			
 			primaryStage.setScene(new Scene(root));

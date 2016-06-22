@@ -36,9 +36,11 @@ public class controller implements Initializable{
 	
 	public void setPrimaryStage(Stage pri_stage)
 	{
+		// Main에서 받아온 Stage.
 		primaryStage = pri_stage;
 	}
 	
+	// FileChooser 창 만들기 - ExtensionFilter를 작성하여 Open시 파일을 필터함.
 	public void handleOpenFileChooser(ActionEvent e)
 	{
 		FileChooser fileChooser = new FileChooser();
@@ -55,7 +57,7 @@ public class controller implements Initializable{
 			System.out.println(selectedFile.getPath());
 		}
 	}
-	
+		
 	public void handleSaveFileChooser(ActionEvent e)
 	{
 		FileChooser fileChooser = new FileChooser();
@@ -68,6 +70,7 @@ public class controller implements Initializable{
 		}
 	}
 	
+ 
 	public void handleDirectoryChooser(ActionEvent e)
 	{
 		DirectoryChooser d_chooser = new DirectoryChooser();
@@ -77,6 +80,7 @@ public class controller implements Initializable{
 			System.out.println(selectedFile.getPath());
 		}
 	}
+	
 	
 	public void handlePopup(ActionEvent e) throws IOException
 	{
@@ -105,6 +109,13 @@ public class controller implements Initializable{
 		Stage dialog = new Stage(StageStyle.UTILITY);
 		dialog.initModality(Modality.WINDOW_MODAL);
 		dialog.initOwner(primaryStage);
+		
+		/*
+		 * [ 방법 2 ]  @FXML private Button btnOk 이외에 FXML의 객체 아이디를 불러와 사용하는 방법. 
+		 * 1. custom_dialog.fxml 을 생성한다. ( AnchorPane \ Label(txtTitie) , Button(btnOk ) 형태
+		 * 2. 여기의 메소드에서 FXMLLoader.load 함수를 통해 fxml 파일을 불러오고 파일에 있는 rootContainer인 AnchorPane 객체를 불러온다.
+		 * 3. AnchorPane 객체에 나열되있는 것 중에, txtTitle, btnOk 아이디를 가지는 Label, Button의 객체를 불러와 사용한다.
+		 */
 		
 		AnchorPane anchorPane = (AnchorPane) FXMLLoader.load(getClass().getResource("custom_dialog.fxml"));
 		

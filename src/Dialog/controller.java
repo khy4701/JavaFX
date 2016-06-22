@@ -107,7 +107,7 @@ public class controller implements Initializable{
 	public void handleCustom(ActionEvent e) throws IOException
 	{
 		Stage dialog = new Stage(StageStyle.UTILITY);
-		dialog.initModality(Modality.WINDOW_MODAL);
+		dialog.initModality(Modality.WINDOW_MODAL);   // Modal 형태( 현재 창만 사용 ) 
 		dialog.initOwner(primaryStage);
 		
 		/*

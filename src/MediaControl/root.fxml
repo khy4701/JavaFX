@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="377.0" prefWidth="653.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MediaControl.m_control">
+   <children>
+      <Button fx:id="play" layoutX="457.0" layoutY="52.0" mnemonicParsing="false"  prefHeight="29.0" prefWidth="155.0" text="재생" />
+      <Button fx:id="pause" layoutX="457.0" layoutY="81.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="155.0" text="멈춤" />
+      <Button fx:id="stop" layoutX="457.0" layoutY="110.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="155.0" text="중지" />
+      <Slider fx:id="soundSlider" layoutX="457.0" layoutY="338.0" showTickLabels="true" showTickMarks="true" />
+      <ProgressBar fx:id="timeProgress" layoutX="457.0" layoutY="246.0" prefHeight="18.0" prefWidth="116.0" progress="0.0" />
+      <ProgressIndicator fx:id="timeIdent" layoutX="590.0" layoutY="238.0" prefHeight="52.0" prefWidth="44.0" progress="0.0" />
+      <Label layoutX="457.0" layoutY="202.0" text="시간" />
+      <Label layoutX="457.0" layoutY="313.0" text="소리" />
+      <StackPane layoutX="32.0" layoutY="52.0" prefHeight="300.0" prefWidth="400.0">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="300.0" fitWidth="400.0" pickOnBounds="true">
+            	<image><Image url="@media/audio.png" /></image>            
+            </ImageView>
+            
+            <MediaView fx:id="videoView" fitHeight="300.0" fitWidth="400.0" preserveRatio="false" />
+         </children>
+      </StackPane>
+      <Label fx:id="timeLabel" layoutX="500.0" layoutY="275.0" />
+   </children>
+</AnchorPane>

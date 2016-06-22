@@ -26,6 +26,6 @@
             <MediaView fx:id="videoView" fitHeight="300.0" fitWidth="400.0" preserveRatio="false" />
          </children>
       </StackPane>
-      <Label fx:id="timeLabel" layoutX="500.0" layoutY="275.0" />
+      <Label fx:id="timeLabel" layoutX="500.0" layoutY="275.0"  />
    </children>
 </AnchorPane>

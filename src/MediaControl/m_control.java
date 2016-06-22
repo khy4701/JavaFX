@@ -150,7 +150,7 @@ public class m_control implements Initializable {
 			if (endOfMedia) {
 				mediaPlayer.stop();
 				mediaPlayer.seek(mediaPlayer.getStartTime()); // 끝나면 처음으로
-																// offset을 돌림.
+																// offset을 돌림.d
 			}
 			mediaPlayer.play(); // media 재생.
 			endOfMedia = false;

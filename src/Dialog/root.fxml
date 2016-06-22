@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="160.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dialog.controller">
+   <children>
+      <Button onAction="#handleOpenFileChooser" layoutX="30.0" layoutY="20.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="147.0" text="Open FileChooser" />
+      <Button onAction="#handleDirectoryChooser" layoutX="28.0" layoutY="64.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="355.0" text="DirectoryChooser" />
+      <Button onAction="#handleCustom" layoutX="245.0" layoutY="106.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="137.0" text="Custom" />
+      <Button onAction="#handlePopup" layoutX="30.0" layoutY="106.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="147.0" text="Popup" />
+      <Button onAction="#handleSaveFileChooser" layoutX="245.0" layoutY="20.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="137.0" text="Save FileChooser" />
+   </children>
+</AnchorPane>

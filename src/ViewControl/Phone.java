@@ -13,7 +13,7 @@ public class Phone {
 		this.image = new SimpleStringProperty(image);
 	}
 	
-	public String getSmartphone()
+	public String getSmartphone2()
 	{
 		return s_phone.get();
 	}

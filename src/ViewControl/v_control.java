@@ -63,7 +63,7 @@ public class v_control implements Initializable {
 		
 		// 첫번째 열(세로)에 들어갈 Offset
 		TableColumn smartphone = TblView.getColumns().get(0);
-		smartphone.setCellValueFactory(new PropertyValueFactory("smartphone")); 
+		smartphone.setCellValueFactory(new PropertyValueFactory("smartphone2")); 
 		
 		/*
 		 * PropertyValueFactory 함수의 생성자는   TableView<Phone> 에서 생성한 Phone 클래스의 메소드의 Callback 함수 형태
@@ -103,7 +103,7 @@ public class v_control implements Initializable {
 		System.out.println("ListView - item :" + item);
 		
 		Phone phone = TblView.getSelectionModel().getSelectedItem();
-		System.out.println("TableView - phone :" + phone.getSmartphone());
+		System.out.println("TableView - phone :" + phone.getSmartphone2());
 	}
 	
 	public void CancelAction(ActionEvent e)
